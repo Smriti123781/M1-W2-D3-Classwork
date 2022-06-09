@@ -7,7 +7,7 @@ body{
     background: #1e1b33;
 }
 
-
+/* Logo and Header | Navigation Bar */
 
 .logo, ul li{
     color: white;
@@ -37,6 +37,8 @@ nav, nav ul{
 nav{
     justify-content: space-around;
     margin-top: 1em;
+    z-index: 1;
+    position: sticky !important;
 }
 
 nav ul{
@@ -52,7 +54,9 @@ nav svg{
     fill: #fff;
 }
 
+/* x - Logo and Header | Navigation Bar - x */
 
+/* Body Content Main */
 
 .body-content-home{
     display: flex;
@@ -118,7 +122,7 @@ div:first-child .social-icon{
     border: transparent;
     padding: .5em 2.5em;
     border-radius: 2em;
-    margin-left: 2.2em;
+    margin-left: 2.1em;
     margin-top: 1em;
     border: none;
 }
@@ -133,7 +137,7 @@ div:first-child .social-icon{
     fill: #fff;
     height: 1.5em;
     width: 1.5em;
-    margin-left: 5.2em;
+    margin-left: 5.4em;
 }
 
 .scroll-txt{
@@ -143,7 +147,6 @@ div:first-child .social-icon{
     margin-top: 5em;
     text-align: center;
     margin-bottom: .5em;
-    
 }
 
 
@@ -236,53 +239,158 @@ font-weight: 600;
 .abt-icons{
     display: flex;
     justify-content: space-evenly;
-    margin: 2em;
+    margin: auto;
+    width: 70%;
+    flex-direction: column;
 }
 
 .abt-icons-1{
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
     color: #fff;
+    font-size: 20pt;
 }
 
-.abt-icons-1 svg{
-    height: 1.5em;
-    width: 1.5em;
-    fill: white;
+.abt-icons-1 h3{
+    font-size: 14.5pt;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    margin-top: .5em;
 }
-.about-drop-content{
+
+.abt-icons-1 p{
+    font-size: 12pt;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    margin-top: .1em;
+}
+
+.abt-drop-content{
     color: #fff;
+    background: #22a7b6a2;
     width: max-content;
-    background-color: #22a7b6a2;
-   padding: 1em;
-   font-family: 'poppins';
-   font-size: 12pt;
-   border-radius: .5em;
-   line-height: 2;
-   position: absolute;
-   top: 3.5em;
-   left: 44.4em;
-   visibility: hidden;
-
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    border-radius: .5em;
+    line-height: 2;
+    position: absolute;
+    top: 1.5em;
+    left: 16.5em;
+    display: none !important;
 }
-.about-drop-content ul li{
+
+.abt-drop-content ul, .abt-drop-content{
+    display: inline-block;
+}
+
+.abt-drop-content ul li{
     list-style: none;
-    padding: .1em;
-    
+    padding: .1em .7em;
+    width: 14em;
 }
-.about-drop-content ul li:hover{
-    background-color: rgb(248, 218, 218);
-    color: #1e1b33;
+
+.abt-drop-content ul li:hover{
+    background: #e9e0e0e7;
+    color: black;
     cursor: pointer;
-    
+
 }
-.about-drop-content ul li svg{
-  height: 1em;
-  width: 1em;
-  fill: #fff;
+
+.abt-drop-content ul li .fa{
+    height: 1em;
+    width: 1em;
+    fill: white;
+    margin-right: 7px;
 }
+
 .show{
-    visibility: visible;
+    display: block !important;
+}
+
+.web-dev:hover{
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.web-master:hover{
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
 }
 
 
+.nav-items{
+    position: relative;
+}
 
+.serv-box{
+    height: max-content;
+    width: 20em; 
+    background: white;
+    border-radius: .8em;
+}
+
+.index-serv-sec{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.index-abt-sec .sb1{
+    background-color: #5d00ff;
+    padding: 1em;
+}
+
+.index-abt-sec .sb2{
+    background-color: #ffc400;
+    padding: 1em;
+}
+
+.index-abt-sec .sb3{
+    background-color: #ff00a6ea;
+    padding: 1em;
+}
+
+.sb1 img,
+.sb2 img,
+.sb3 img{
+    height: 6em;
+    width: auto;
+}
+
+.sb1  h3,
+.sb2  h3,
+.sb3  h3{
+    font-weight: 600;
+    margin: .5em 0em;
+}
+
+.serv-box p{
+    font-size: 11pt;
+}
+
+.foot-p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: -2em;
+}
+
+.foot-p span a{
+    color: #eb4b60;
+    text-decoration: none;
+}
+
+.foot-p span a:hover{
+    cursor: pointer;
+    color: #eb4b60ca;
+    text-decoration: underline;
+}
+
+.serv-txt{
+    margin-bottom: 1em;
+}
+/* x - Services - x */
